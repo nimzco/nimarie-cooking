@@ -23,6 +23,7 @@ input[type='button'] {
   cursor: pointer;
   box-sizing: border-box;
 }
+
 .button:hover,
 button:hover,
 input[type='submit']:hover,
@@ -37,15 +38,17 @@ input[type='button']:focus {
   border-color: #888;
   outline: 0;
 }
+
 .button.button-primary,
 button.button-primary,
 input[type='submit'].button-primary,
 input[type='reset'].button-primary,
 input[type='button'].button-primary {
   color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
+  background-color: $blue;
+  border-color: $blue;
 }
+
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type='submit'].button-primary:hover,
@@ -57,6 +60,6 @@ input[type='submit'].button-primary:focus,
 input[type='reset'].button-primary:focus,
 input[type='button'].button-primary:focus {
   color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
+  background-color: darken($blue, 10);
+  border-color: darken($blue, 10);
 }
