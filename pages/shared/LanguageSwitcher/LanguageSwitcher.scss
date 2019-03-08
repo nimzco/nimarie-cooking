@@ -1,0 +1,44 @@
+.LanguageSwitcher {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  z-index: 1;
+  text-align: right;
+
+  &:hover {
+    .Dropdown {
+      display: block;
+    }
+  }
+}
+
+.Flag {
+  max-width: 1.5em;
+  border-radius: 1.5em;
+  margin-left: 0.5em;
+}
+
+.Locale {
+  border: none;
+  font-weight: normal;
+  text-transform: none;
+  padding: 0;
+
+  span, img {
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.Dropdown {
+  display: none;
+  list-style: none;
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.DropdownLocale {
+  margin-bottom: 0.4em;
+}

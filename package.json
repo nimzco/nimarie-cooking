@@ -10,6 +10,7 @@
     "@shopify/react-i18n": "^0.11.1",
     "@zeit/next-sass": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
+    "classnames": "^2.2.6",
     "next": "^8.0.3",
     "next-images": "^1.1.1",
     "node-sass": "^4.11.0",

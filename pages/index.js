@@ -1,21 +1,24 @@
 import React from 'react';
-import HomeIndex from './components/HomeIndex';
+import {withRouter} from 'next/router'
 import {
   Provider as I18nProvider,
   Manager as I18nManager,
 } from '@shopify/react-i18n';
 
+import HomeIndex from './components/HomeIndex';
+
 import './styles/application.scss';
 
-const i18nManager = new I18nManager({
-  locale: 'en'
-});
 
 class Home extends React.Component {
+  i18nManager = new I18nManager({
+    locale: this.props.router.query.locale || 'en',
+  });
+
   render() {
     return (
       <>
-        <I18nProvider manager={i18nManager}>
+        <I18nProvider manager={this.i18nManager}>
           <HomeIndex />
         </I18nProvider>
       </>
@@ -23,4 +26,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default withRouter(Home);

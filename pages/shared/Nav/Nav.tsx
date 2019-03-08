@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Nav.scss';
-import {withI18n} from '@shopify/react-i18n';
+import {withI18n, WithI18nProps} from '@shopify/react-i18n';
 
-class Nav extends React.Component {
+class Nav extends React.Component<WithI18nProps> {
   render() {
     const {i18n} = this.props;
     return (
