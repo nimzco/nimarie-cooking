@@ -17,7 +17,7 @@ class Title extends React.Component<WithI18nProps> {
               {i18n.translate('subtitle')}
             </h2>
           </header>
-          <p>
+          <p className={styles.Tagline}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos id voluptas, officiis
             temporibus laboriosam perferendis ab consequatur optio vero voluptatum modi et? Cum facilis
             minima tempore nobis, laboriosam quia ipsa?
