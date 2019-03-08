@@ -1,6 +1,13 @@
-.Header {
+@import 'pages/styles/settings/colors';
+
+.Wrapper {
+  background-color: $yellow;
+  padding: 3em 0 3em 0;
   text-align: center;
-  margin: 3em 0 3em 0;
+}
+
+.Header {
+  padding: 3em 0 3em 0;
 }
 
 .Subtitle {

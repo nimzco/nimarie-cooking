@@ -3,7 +3,7 @@ import Head from 'next/head';
 function PageHead() {
   return (
     <Head>
-      <meta charset="utf-8" />
+      <meta charSet="utf-8" />
       <title>NiMarie's dinner - Let’s have a French dinner together</title>
       <link href="./dist/application.css" rel="stylesheet" />
       {/* <link href='./dist/images/TODO' rel='shortcut icon' type='image/ico'> */}

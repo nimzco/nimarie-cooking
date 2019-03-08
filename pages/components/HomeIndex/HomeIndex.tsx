@@ -1,7 +1,10 @@
 import React from 'react';
-import Layout from '../../shared/Layout'
+import Layout from '../../shared/Layout';
 import Menu from '../Menu';
-import '../../styles/application.scss';
+import MarieEmmaPicture from './images/marie-emma-profile.jpeg';
+import NimaPicture from './images/nima-profile.jpeg';
+
+import styles from './HomeIndex.scss';
 
 class HomeIndex extends React.Component {
   render() {
@@ -9,11 +12,11 @@ class HomeIndex extends React.Component {
       <Layout>
         <div>
           <h3 id="who-we-are">Meet The Hosts</h3>
-          <div class="row">
-            <article class="six columns">
+          <div className="row">
+            <article className="six columns">
               <img
-                class="profile-picture"
-                src="./dist/images/marie-emma-profile.jpeg"
+                className={styles.ProfilePicture}
+                src={MarieEmmaPicture}
                 alt="Marie-Emma's picture"
               />
               <h4>Marie-Emma</h4>
@@ -23,12 +26,8 @@ class HomeIndex extends React.Component {
                 aut debitis aliquid voluptatum nobis, reprehenderit cupiditate!
               </p>
             </article>
-            <article class="six columns">
-              <img
-                class="profile-picture"
-                src="./dist/images/nima-profile.jpeg"
-                alt="Nima's picture"
-              />
+            <article className="six columns">
+              <img className={styles.ProfilePicture} src={NimaPicture} alt="Nima's picture" />
               <h4>Nima</h4>
               <p>
                 👋🏼 Hi there! My name is Nima, I am French and Persian. I was born in Nice, France
@@ -151,10 +150,10 @@ class HomeIndex extends React.Component {
               fact. How did you hear about us?
             </p>
             <hr />
-            <p class="contact-us">
-              <span class="button button-disabled">hi@nimarie.cooking</span>
+            <p className="contact-us">
+              <span className="button button-disabled">hi@nimarie.cooking</span>
               <br />
-              <a href="mailto:hi@nimarie.cooking" class="button button-primary">
+              <a href="mailto:hi@nimarie.cooking" className="button button-primary">
                 Contact Us
               </a>
             </p>

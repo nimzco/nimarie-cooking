@@ -1,42 +1,6 @@
-@import '../../styles/settings/colors';
-
-.Wrapper {
-  text-align: center;
-}
-.Menu {
-  display: inline-block;
-  vertical-align: top;
-
-  @media (min-width: 550px) {
-    width: 33%;
-  }
-}
-
-.Title {
-  position: relative;
-  margin-bottom: 1.3em;
-
-  p {
-    margin-bottom: 0;
-  }
-
-  h4 {
-    &:after {
-      display: none;
-    }
-    margin-bottom: 0;
-  }
-  &:after {
-    content: '͠ ';
-    text-align: center;
-    width: 100%;
-    color: $blue;
-    background: none;
-    bottom: -6px;
-    position: relative;
-  }
-}
-
-.MenuList {
-  list-style: none;
+.ProfilePicture {
+  max-width: 10em;
+  border-radius: 10em;
+  display: block;
+  margin-bottom: 1em;
 }

@@ -3,14 +3,16 @@ import Title from './Title';
 import Nav from './Nav';
 import Footer from './Footer';
 
-import styles from '../styles/application.scss';
+interface Props {
+  children: JSX.Element,
+}
 
-function Layout({children}) {
+function Layout({children}: Props) {
   return (
     <div>
       <PageHead />
-      <div className={styles.container}>
-        <Title />
+      <Title />
+      <div className="container">
         <Nav />
         {children}
       </div>
