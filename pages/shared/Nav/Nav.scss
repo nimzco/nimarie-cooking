@@ -1,0 +1,45 @@
+@import "pages/styles/settings/colors";
+
+.Menu {
+  list-style: none;
+  margin-bottom: 0;
+  border-top: 1px solid $gray-light;
+  margin-bottom: 3em;
+  text-align: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 3px;
+    width: 33%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $blue;
+  }
+
+  &:before {
+    content: '';
+    height: 3px;
+    width: 33%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: $red;
+  }
+}
+
+.MenuItem {
+  display: inline-block;
+}
+
+.Link {
+  padding: 0 2em;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  line-height: 6.5rem;
+  color: #222;
+  display: inline-block;
+}
