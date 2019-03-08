@@ -15,27 +15,27 @@ class Nav extends React.Component {
           </li>
           <li className={styles.MenuItem}>
             <a className={styles.Link} href="#the-experience">
-              The Experience
+              {i18n.translate('experience')}
             </a>
           </li>
           <li className={styles.MenuItem}>
             <a className={styles.Link} href="#what-we-ask">
-              What We Are Looking For
+              {i18n.translate('whatWeAreLookingFor')}
             </a>
           </li>
           <li className={styles.MenuItem}>
             <a className={styles.Link} href="#menu">
-              Menu
+              {i18n.translate('menu')}
             </a>
           </li>
           <li className={styles.MenuItem}>
             <a className={styles.Link} href="#contact">
-              Contact us
+              {i18n.translate('contact')}
             </a>
           </li>
           <li className={styles.MenuItem}>
             <a className={styles.Link} href="#faq">
-              FAQ
+              {i18n.translate('faq')}
             </a>
           </li>
         </ul>

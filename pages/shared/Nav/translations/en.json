@@ -1,3 +1,8 @@
 {
-  "hosts": "The Hosts"
+  "hosts": "The Hosts",
+  "experience": "The Experience",
+  "whatWeAreLookingFor": "What We Are Looking For",
+  "menu": "Menu",
+  "contact": "Contact us",
+  "faq": "FAQ"
 }
