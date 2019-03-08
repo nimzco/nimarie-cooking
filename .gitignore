@@ -10,3 +10,4 @@ public/assets
 coverage
 .env
 tmp/*
+.next
