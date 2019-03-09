@@ -1,0 +1,36 @@
+$height: 25em;
+$spacing: 0.5em;
+
+.Row {
+  height: $height;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: $spacing;
+
+  > div:first-child {
+    flex: 2;
+    margin-right: $spacing;
+  }
+
+  > div:last-child {
+    flex: 1;
+  }
+}
+
+.Column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Photo {
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  display: block;
+  height: 100%;
+
+  &:first-child {
+    margin-bottom: $spacing;
+  }
+}

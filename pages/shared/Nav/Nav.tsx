@@ -29,6 +29,11 @@ class Nav extends React.Component<WithI18nProps> {
             </a>
           </li>
           <li className={styles.MenuItem}>
+            <a className={styles.Link} href="#gallery">
+              {i18n.translate('gallery')}
+            </a>
+          </li>
+          <li className={styles.MenuItem}>
             <a className={styles.Link} href="#contact">
               {i18n.translate('contact')}
             </a>
