@@ -1,7 +1,6 @@
 {
-  "hosts": "The Hosts",
-  "experience": "The Experience",
-  "whatWeAreLookingFor": "What We Are Looking For",
+  "intro": "Intro",
+  "about": "About",
   "menu": "Menu",
   "gallery": "Gallery",
   "contact": "Contact us",

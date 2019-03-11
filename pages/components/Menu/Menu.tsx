@@ -1,49 +1,57 @@
 import styles from './Menu.scss';
+import {withI18n, WithI18nProps} from '@shopify/react-i18n';
 
-function Menu() {
+function Menu({i18n}: WithI18nProps) {
   return (
     <article>
       <h3 id="menu">Menu</h3>
-      <p>Here are some examples of the dishes we will cook for you.</p>
+      <p>
+        {i18n.translate('description')}
+      </p>
       <div className={styles.Wrapper}>
         <section className={styles.Menu}>
           <header className={styles.Title}>
             <h4>Entrées</h4>
-            <p>Starters</p>
+            {i18n.locale !== 'fr' && <p>Starters</p>}
           </header>
           <ul className={styles.MenuList}>
             <li>Des chouquettes salé au fromage</li>
             <li>Salade niçoise</li>
             <li>Pissaladière</li>
-            <li>Mayonnaise / légumes à tremper</li>
-            <li>Mast o khiar</li>
-            <li>Salade Chirazi</li>
+            <li>Mayonnaise avec légumes à tremper</li>
+            <li>Salade tomates concombre oignons</li>
+            <li>Veloutés de légumes</li>
+            <li>Salade de chèvre chaud</li>
+            <li>Cake salé</li>
           </ul>
         </section>
         <section className={styles.Menu}>
           <header className={styles.Title}>
             <h4>Plats principaux</h4>
-            <p>Main course</p>
+            {i18n.locale !== 'fr' && <p>Main course</p>}
           </header>
           <ul className={styles.MenuList}>
-            <li>Œufs à la coque</li>
             <li>
-              Plat au four pommes de terre pommes, tomates, courgettes, huile d’olive et herbes de
-              Provence
+              Pommes de terre pommes, tomates, courgettes, huile d’olive et herbes de Provence au
+              four
             </li>
             <li>Endives au jambon</li>
-            <li>Quiche lorraine / tarte aux poireaux / tarte tomates moutarde</li>
+            <li>Quiche lorraine</li>
+            <li>Tarte aux poireaux</li>
+            <li>Tarte tomates moutarde</li>
             <li>Poulet basquaise</li>
             <li>Gratin de chou-fleur</li>
             <li>Croque monsieur</li>
-            <li>Filet mignon ou rôti de porc</li>
+            <li>Filet mignon</li>
+            <li>Rôti de porc</li>
             <li>Apéritif dînatoire</li>
+            <li>Camembert au four</li>
           </ul>
         </section>
         <section className={styles.Menu}>
           <header className={styles.Title}>
             <h4>Desserts</h4>
-            <p>Desserts</p>
+            {i18n.locale !== 'fr' && <p>Desserts</p>}
           </header>
           <ul className={styles.MenuList}>
             <li>Plateau de fromages</li>
@@ -61,7 +69,7 @@ function Menu() {
         <section className={styles.Menu}>
           <header className={styles.Title}>
             <h4>Petits-déjeuners</h4>
-            <p>Breakfasts</p>
+            {i18n.locale !== 'fr' && <p>Breakfasts</p>}
           </header>
           <ul className={styles.MenuList}>
             <li>Crêpes</li>
@@ -72,12 +80,13 @@ function Menu() {
             <li>Cake à la banane</li>
             <li>Compote / yaourt</li>
             <li>Pain perdu</li>
+            <li>Café accompagné de son Camembert</li>
           </ul>
         </section>
         <section className={styles.Menu}>
           <header className={styles.Title}>
             <h4>Cocktails</h4>
-            <p>Cocktails</p>
+            {i18n.locale !== 'fr' && <p>Cocktails</p>}
           </header>
           <ul className={styles.MenuList}>
             <li>White Lady</li>
@@ -92,4 +101,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default withI18n()(Menu);

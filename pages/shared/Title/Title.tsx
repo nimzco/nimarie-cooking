@@ -13,14 +13,14 @@ class Title extends React.Component<WithI18nProps> {
         <div className="container">
           <header className={styles.Header}>
             <h1>{i18n.translate('title')}</h1>
-            <h2 className={styles.Subtitle}>
-              {i18n.translate('subtitle')}
-            </h2>
+            <h2 className={styles.Subtitle}>{i18n.translate('subtitle')}</h2>
           </header>
           <p className={styles.Tagline}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos id voluptas, officiis
-            temporibus laboriosam perferendis ab consequatur optio vero voluptatum modi et? Cum facilis
-            minima tempore nobis, laboriosam quia ipsa?
+            <strong>{i18n.translate('taglineBold')}</strong>
+            <br />
+            {i18n.translate('tagline1')}
+            <br />
+            {i18n.translate('tagline2')}
           </p>
         </div>
       </div>

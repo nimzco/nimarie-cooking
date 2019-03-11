@@ -1,19 +1,42 @@
 import React from 'react';
+import {withI18n, WithI18nProps} from '@shopify/react-i18n';
 import Layout from '../../shared/Layout';
 import Menu from '../Menu';
 import PhotoGallery from '../PhotoGallery';
 import MarieEmmaPicture from './images/marie-emma-profile.jpeg';
 import NimaPicture from './images/nima-profile.jpeg';
+import photo from '../PhotoGallery/photos/fruits.jpeg';
 
 import styles from './HomeIndex.scss';
 
-class HomeIndex extends React.Component {
+class HomeIndex extends React.Component<WithI18nProps> {
   render() {
+    const {i18n} = this.props;
+
     return (
       <>
         <Layout>
+          <div id="intro">
+            <h4>{i18n.translate('cook')}</h4>
+            <p>{i18n.translate('cookDescription')}</p>
+            <h4>{i18n.translate('share')}</h4>
+            <p>{i18n.translate('shareDescription')}</p>
+            <h4>{i18n.translate('discover')}</h4>
+            <p>{i18n.translate('discoverDescription')}</p>
+          </div>
           <div>
-            <h3 id="who-we-are">Meet The Hosts</h3>
+            <h3 id="about">A propos</h3>
+            <h4>La naissance du projet</h4>
+            <p>
+              Pendant 3 mois nous avons décidé d’explorer la Corée et le Japon et voulons découvrir
+              et vivre en plein cœur de la culture. Couchsurfing, Airbnb, house sitting, plusieurs
+              options s’offrent à nous, mais nous voulons rencontrer les gens et offrir quelque
+              chose en échange. Nous voyageons à petit budget. Notre but n’est pas d’avoir des
+              commentaires positifs ou 5 étoiles, mais simplement d’être nous même et apprécier de
+              bons repas avec de la bonne compagnie.
+            </p>
+
+            <h4>Qui sommes nous ?</h4>
             <div className="row">
               <article className="six columns">
                 <img
@@ -68,44 +91,7 @@ class HomeIndex extends React.Component {
             </article>
             <hr />
             <article>
-              <h3 id="the-experience">The Experience</h3>
-              <p>
-                Musique - playlist spécial Nous avons des menus prédéfinis mais vous pouvez nous
-                aider à construire un menu personnalisé qui vous ressemble plus. Si vous voulez par
-                exemple tester le petit déjeuner à la française ou si vous voulez tester un picnic.
-              </p>
-              <p>
-                Cuisine familiale et non de la gastronomie. La cuisine que l’on fait tous les jours
-                en France. Manger comme des Français au quotidien.
-              </p>
-              <p>
-                We cook French and Persian cuisine and talk about the culture around dinner. Let’s
-                discover our French / Persian culture and your culture around a great meal together.
-                We will be the host, we will do the cooking. You can be our hosts and we will cook
-                for you our best dishes. We also do cocktails. You can join us in the kitchen
-              </p>
-              <p>
-                Pendant 3 mois nous avons décidé d’explorer la Corée et le Japon et voulons
-                découvrir et vivre en plein cœur de la culture. Donc quoi de mieux que de discuter
-                de cela autour d’un bon repas ?
-              </p>
-              <p>
-                Soit nous faisons la cuisine gratuitement en échange d’un hébergement - Soit vous
-                nous payez - Idéal 2 invités ou 4 maximum pour pouvoir être sûr de profiter d’un
-                échange mutuel Nous ne sommes pas des chefs, nous sommes justes 2 passionnées de
-                culture, de rencontre et de cuisine. Et quoi de mieux qu’un bon repas pour découvrir
-                les gens et la culture.
-              </p>
-              <p>Nous voyageons à petit budget</p>
-              <p>Nous partagerons nos recettes après notre passage.</p>
-              <p>
-                Our goal is not to have five stars or good reviews, we just want to be true to
-                ourselves and enjoy a good dinner with good company.
-              </p>
-            </article>
-            <hr />
-            <article>
-              <h3 id="what-we-ask">What We Are Looking For</h3>
+              <h3 id="what-we-ask">Ce dont nous aurons besoin</h3>
               <p>
                 We only ask for a bed for two people for one or more nights. Learn about you, you’re
                 culture and your cuisine. Learn some of your recipes. The things you cook when you
@@ -163,8 +149,10 @@ class HomeIndex extends React.Component {
                   Contact Us
                 </a>
               </p>
-              <hr />
             </article>
+            <hr />
+            <img src={photo} />
+            <hr />
             <article>
               <h3 id="faq">FAQ - Frequently Asked Questions</h3>
               <h5>Why not just using couchsurfing.com?</h5>
@@ -183,4 +171,4 @@ class HomeIndex extends React.Component {
   }
 }
 
-export default HomeIndex;
+export default withI18n()(HomeIndex);

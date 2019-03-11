@@ -1,8 +1,8 @@
 {
-  "hosts": "Les Hôtes",
-  "experience": "L'experience",
-  "whatWeAreLookingFor": "Ce que nous recherchons",
+  "intro": "Intro",
+  "about": "A propos",
   "menu": "Menu",
+  "gallery": "Gallerie",
   "contact": "Nous Contacter",
   "faq": "FAQ"
 }

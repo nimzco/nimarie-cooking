@@ -9,18 +9,13 @@ class Nav extends React.Component<WithI18nProps> {
       <nav>
         <ul className={styles.Menu}>
           <li className={styles.MenuItem}>
-            <a className={styles.Link} href="#who-we-are">
-              {i18n.translate('hosts')}
+            <a className={styles.Link} href="#intro">
+              {i18n.translate('intro')}
             </a>
           </li>
           <li className={styles.MenuItem}>
-            <a className={styles.Link} href="#the-experience">
-              {i18n.translate('experience')}
-            </a>
-          </li>
-          <li className={styles.MenuItem}>
-            <a className={styles.Link} href="#what-we-ask">
-              {i18n.translate('whatWeAreLookingFor')}
+            <a className={styles.Link} href="#about">
+              {i18n.translate('about')}
             </a>
           </li>
           <li className={styles.MenuItem}>
