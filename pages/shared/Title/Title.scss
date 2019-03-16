@@ -18,3 +18,25 @@
 .Tagline {
   font-size: 1.2em;
 }
+
+.Flag {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  border-radius: 0.5em;
+}
+
+.Dates {
+  p {
+    display: inline-block;
+    margin-bottom: 0.7em;
+  }
+  p:first-child {
+    margin-right: 2em;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5em;
+  }
+}

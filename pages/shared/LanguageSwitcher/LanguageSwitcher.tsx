@@ -24,7 +24,7 @@ class LanguageSwitcher extends React.Component<WithI18nProps> {
       <div className={styles.LanguageSwitcher}>
         <button className={styles.Locale}>
           <span>{i18n.translate(i18n.language)}</span>
-          <img className={styles.Flag} src={Flags[i18n.language]} />
+          <img className={styles.CurrentFlag} src={Flags[i18n.language]} />
         </button>
         <ul className={styles.Dropdown}>
           {['fr', 'en', 'kr', 'ja'].map(locale => (

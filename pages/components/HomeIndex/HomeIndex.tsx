@@ -25,8 +25,12 @@ class HomeIndex extends React.Component<WithI18nProps> {
             <p>{i18n.translate('discoverDescription')}</p>
           </div>
           <div>
-            <h3 id="about">A propos</h3>
-            <h4>La naissance du projet</h4>
+            <h3 id="about">
+              {i18n.translate('about')}
+            </h3>
+            <h4>
+              {i18n.translate('born')}
+            </h4>
             <p>
               Pendant 3 mois nous avons décidé d’explorer la Corée et le Japon et voulons découvrir
               et vivre en plein cœur de la culture. Couchsurfing, Airbnb, house sitting, plusieurs

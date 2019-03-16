@@ -12,10 +12,15 @@
   }
 }
 
-.Flag {
+.Flag,
+.CurrentFlag {
   max-width: 1.5em;
   border-radius: 1.5em;
   margin-left: 0.5em;
+}
+
+.CurrentFlag {
+  max-width: 2em;
 }
 
 .Locale {
