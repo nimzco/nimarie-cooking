@@ -25,12 +25,8 @@ class HomeIndex extends React.Component<WithI18nProps> {
             <p>{i18n.translate('discoverDescription')}</p>
           </div>
           <div>
-            <h3 id="about">
-              {i18n.translate('about')}
-            </h3>
-            <h4>
-              {i18n.translate('born')}
-            </h4>
+            <h3 id="about">{i18n.translate('about')}</h3>
+            <h4>{i18n.translate('born')}</h4>
             <p>
               Pendant 3 mois nous avons décidé d’explorer la Corée et le Japon et voulons découvrir
               et vivre en plein cœur de la culture. Couchsurfing, Airbnb, house sitting, plusieurs
@@ -40,51 +36,122 @@ class HomeIndex extends React.Component<WithI18nProps> {
               bons repas avec de la bonne compagnie.
             </p>
 
-            <h4>Qui sommes nous ?</h4>
-            <div className="row">
-              <article className="six columns">
-                <img
-                  className={styles.ProfilePicture}
-                  src={MarieEmmaPicture}
-                  alt="Marie-Emma's picture"
-                />
-                <h4>Marie-Emma</h4>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti excepturi
-                  dolorem est dolor maxime deserunt voluptatibus quod laudantium ipsa et mollitia
-                  similique ab aut debitis aliquid voluptatum nobis, reprehenderit cupiditate!
-                </p>
-              </article>
-              <article className="six columns">
-                <img className={styles.ProfilePicture} src={NimaPicture} alt="Nima's picture" />
-                <h4>Nima</h4>
-                <p>
-                  👋🏼 Hi there! My name is Nima, I am French and Persian. I was born in Nice, France
-                  and raised by 2 Iranian parents who passed on the Iranian culture and cuisine
-                  while I was growing up in a French environment. I started my adulthood as an
-                  entrepreneur in Paris, and 4 years later I moved to become a full time employee at
-                  Shopify in Montréal, Canada where I am currently a web developer lead in the
-                  International team. I love technology, entrepreneurship, and I am passionate about
-                  learning different cultures, meeting people from around the world, experiencing
-                  food and travel. I speak French, Persian, Spanish and I am currently learning
-                  Japanese.
-                </p>
-                <p>
-                  <strong>Fun fact:</strong> Nima means <em>sun</em> in Tibetan, and
-                  <em>half moon</em> in Persian.
-                </p>
-              </article>
-            </div>
+            <article>
+              <h4>Marie-Emma</h4>
+              <img
+                className={styles.ProfilePicture}
+                src={MarieEmmaPicture}
+                alt="Marie-Emma's picture"
+              />
+              <p>
+                Hi everyone ! I'm 29 years old. I work in a non-profit organization about literacy.
+                My mission is to create environments where adults can use their own literacy skills
+                to participate in a group. Since I had my master in sociology, I've always loved
+                working in this area because I can help people and society by giving tools to people
+                who live in precarity. I care about the news, history, and politics. I try to read
+                every day to keep up my knowledge and to try to understand better the news and the
+                people. I'm a kind of utopist and I like to imagine different things. I always have
+                lots of ideas, so I write them down to give them life, but one day I would like to
+                realize at least one of them.
+              </p>
+              <p>
+                I love reading classic novels. Some of my favorites authors are Alexandre Dumas,
+                Carlos Ruiz Zafon, Emile Zola, Lampedusa, etc. I am also a fan of Harry Potter.
+              </p>
+              <p>
+                When I was a teenager a friend of mine, showed me "Hana Yori Dango". It' s a
+                Japanese drama. I was a huge fan and following this discovery I developed a passion
+                with Japanese and Korean drama. I watched a lot of them: Goong, Kurosagi, Coffee
+                Prince, Gobelin, Hanazakari no Kimitachi e, Nobuta wo Produce, Heirs, Love rain,
+                You're beautiful, etc. I'm a big fan of Park Shin Hye. So, this travel in South
+                Korea and Japan represent a lot because I will discover in real life the customs,
+                food, and places. I'm looking forward to tasting street food! For example, in drama,
+                I have always seen families doing kimchi. I hope we could learn and do kimchi with
+                you. Or, I would like to try to eat and watch TV with a kotatsu.
+              </p>
+              <p>
+                I will stop here because I can't share everything in a short description. So, this
+                is some fun facts about me:
+              </p>
+              <ul>
+                <li> I am a volunteer and I like to wake up early. </li>
+                <li> I have to read all the descriptions in museums. </li>
+                <li> I am learning Korean for this travel, but I'm very debutant. </li>
+                <li>
+                  You think something is impossible and I can propose you a lot of alternatives.
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h4>Nima</h4>
+              <img className={styles.ProfilePicture} src={NimaPicture} alt="Nima's picture" />
+              <p>
+                Hi there! My name is Nima, soon to be 30, I am French and Persian. I was born in
+                Nice, France and raised by 2 Iranian parents who passed on to me the Persian culture
+                and cuisine while I was growing up in a French environment. From my early days, I
+                had the chance to grow up and learn 2 different languages and cultures. I went to
+                school in France and in the summer, when we could, my mom, my sister and I would
+                travel to Iran to visit the rest of the family. That meant, living for weeks in a
+                fully different culture, speaking Persian and enjoying great food, music and family
+                parties.
+              </p>
+              <p>
+                In my teenage days, I read lots of mangas. That was my little door into Japanese
+                culture like most teenagers at the time. But it's only recently that I had the
+                chance to discover more about it. I currently work at a Commerce company (Shopify)
+                that is trying to enter the Japanese market. As a developer, my goal with my team is
+                to understand the cultural differences between North America and Japan and make our
+                product better localized for Japanese people. And it has been fascinating. That is
+                what made me start learning Japanese a few months ago.
+              </p>
+              <p>
+                I love technology and entrepreneurship. This is why I like to give back to the open
+                source community on the Internet by creating or contributing to projects during my
+                free time. But more importantly, I love people. Listening to their stories and their
+                viewpoint; debating with them and having fun. Oh, and I forgot to mention, I started
+                doing improv as a leisure activity and I love it!
+              </p>
+              <p>
+                Fun fact: Nima means <em>sun</em> in Tibetan, and
+                <em>half moon</em> in Persian.
+              </p>
+            </article>
             <article>
               <h4>Us</h4>
               <p>
-                We have been together since 2011 and are both originally from Nice, in the south of
-                France. Since then, we lived 4 years in Paris, and 3 years in Montreal, Canada. Now
-                we have decided to go back to the city we love the most: Paris. But before doing
-                that, we want to discover South Korea and Japan. That’s why we’ve decided to take 3
-                months between August and November to discover these two countries, its culture and
-                its people. We can’t wait to put on our bag packs, hop in the plane and come meet
-                you!
+                We are two passionate people in love with travel and people. And you know what? We
+                are about to realize a unique life experience thanks to you.
+              </p>
+              <p>
+                Seriously. It's been a whole year that we are preparing ourselves to take 3 months
+                off away from our daily routine to meet new people, discover new cultures, new
+                activities, new languages, new landscapes. We want to learn about different routines
+                by experiencing them. At the dawn of our thirties, we want to challenge ourselves
+                for an adventure full of discoveries and new learnings.
+                <p>
+                  We have traveled a lot since our twenties: Thaïland, Vietnam, Canada, Mexico,
+                  Portugal, Spain, Italy, Netherlands, UK, US, Sweden and France of course.
+                  Although, we never really left our comfort zone as it always was classic holidays.
+                  Don't get us wrong. It was great, we always had great times and we have seen lots
+                  of beautiful landscapes, yet we never really had the time to connect fully with
+                  the people locally. That's why we want to experiment Couchsurfing. We want an
+                  authentic experience to discover South Korea and Japan. We want to discover the
+                  know-how and customs, jobs, history, daily food, and daily life.
+                </p>
+                <p>Before introducing each other, here are some fun facts about us:</p>
+                <ul>
+                  <li>
+                    We love talking and we do it all the time. We can't go through a day without
+                    telling each other every single detail of our lives. It's fantastic! We love
+                    talking to people but also listening to their stories, their unique lives,
+                    experiences, and families.{' '}
+                  </li>
+                  <li>We love walking and talking together about the world. </li>
+                  <li>
+                    We love sharing our French culture and cook French cuisine. We will love to
+                    share our French recipes with you if the ingredients are available!
+                  </li>
+                </ul>
               </p>
               <p>We love to host friends for dinner at our place and cook them dinner.</p>
               <p>

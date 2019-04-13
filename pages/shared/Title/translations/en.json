@@ -1,7 +1,11 @@
 {
   "title": "Let’s cook together",
   "subtitle": "Marie-Emma & Nima are cooking!",
-  "taglineBold": "Cuisiner. Partager. Decouvrir",
-  "tagline1": "Quoi de mieux qu’un bon repas pour faire connaissance et passer un excellent moment ?",
-  "tagline2": "Une nuit ou deux chez vous en échange de bons repas français."
+  "taglineBold": "Cook. Share. Discover",
+  "tagline1": "What else than a good dinner to get to know each other and have a great time?",
+  "tagline2": "A night or two at your place in exchange for a good French dinner.",
+  "planning": {
+    "korea": "Aug 15 - Oct 6",
+    "japan": "Oct 7 - Nov 19"
+  }
 }

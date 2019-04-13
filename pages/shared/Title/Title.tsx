@@ -11,7 +11,7 @@ class Title extends React.Component<WithI18nProps> {
     const {i18n} = this.props;
     return (
       <div className={styles.Wrapper}>
-        <LanguageSwitcher />
+        {/* <LanguageSwitcher /> */}
         <div className="container">
           <header className={styles.Header}>
             <h1>{i18n.translate('title')}</h1>
@@ -26,10 +26,10 @@ class Title extends React.Component<WithI18nProps> {
           </p>
           <div className={styles.Dates}>
             <p>
-              <img className={styles.Flag} src={KRFlag} /><span>Du 15 août au 1er octobre</span>
+              <img className={styles.Flag} src={KRFlag} /><span>{i18n.translate('planning.korea')}</span>
             </p>
             <p>
-              <img className={styles.Flag} src={JPFlag} /><span>Du 1er october à mi-novembre</span>
+              <img className={styles.Flag} src={JPFlag} /><span>{i18n.translate('planning.japan')}</span>
             </p>
           </div>
         </div>
