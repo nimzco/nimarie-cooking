@@ -3,7 +3,8 @@ import {withI18n, WithI18nProps} from '@shopify/react-i18n';
 import Layout from '../../shared/Layout';
 import Menu from '../Menu';
 import PhotoGallery from '../PhotoGallery';
-import MarieEmmaPicture from './images/marie-emma-profile.jpeg';
+import MarieEmmaPicture from './images/marie-emma-profile.jpg';
+import UsPicture from './images/us-profile.jpg';
 import NimaPicture from './images/nima-profile.jpeg';
 import photo from '../PhotoGallery/photos/fruits.jpeg';
 
@@ -26,7 +27,7 @@ class HomeIndex extends React.Component<WithI18nProps> {
           </div>
           <div>
             <h3 id="about">{i18n.translate('about')}</h3>
-            <h4>{i18n.translate('born')}</h4>
+            {/* <h4>{i18n.translate('born')}</h4>
             <p>
               Pendant 3 mois nous avons décidé d’explorer la Corée et le Japon et voulons découvrir
               et vivre en plein cœur de la culture. Couchsurfing, Airbnb, house sitting, plusieurs
@@ -34,8 +35,51 @@ class HomeIndex extends React.Component<WithI18nProps> {
               chose en échange. Nous voyageons à petit budget. Notre but n’est pas d’avoir des
               commentaires positifs ou 5 étoiles, mais simplement d’être nous même et apprécier de
               bons repas avec de la bonne compagnie.
-            </p>
+            </p> */}
 
+            <article>
+              <h4>Us</h4>
+              <img
+                className={styles.ProfilePicture}
+                src={UsPicture}
+                alt="Marie-Emma & Nima's picture"
+              />
+              <p>
+                We are two passionate people in love with travel and people. And you know what? We
+                are about to realize a unique life experience thanks to you.
+              </p>
+              <p>
+                Seriously. It's been a whole year that we are preparing ourselves to take 3 months
+                off away from our daily routine to meet new people, discover new cultures, new
+                activities, new languages, new landscapes. We want to learn about different routines
+                by experiencing them. At the dawn of our thirties, we want to challenge ourselves
+                for an adventure full of discoveries and new learnings.
+                <p>
+                  We have traveled a lot since our twenties: Thaïland, Vietnam, Canada, Mexico,
+                  Portugal, Spain, Italy, Netherlands, UK, US, Sweden and France of course.
+                  Although, we never really left our comfort zone as it always was classic holidays.
+                  Don't get us wrong. It was great, we always had great times and we have seen lots
+                  of beautiful landscapes, yet we never really had the time to connect fully with
+                  the people locally. That's why we want to experiment Couchsurfing. We want an
+                  authentic experience to discover South Korea and Japan. We want to discover the
+                  know-how and customs, jobs, history, daily food, and daily life.
+                </p>
+                <p>Before introducing each other, here are some fun facts about us:</p>
+                <ul>
+                  <li>
+                    We love talking and we do it all the time. We can't go through a day without
+                    telling each other every single detail of our lives. It's fantastic! We love
+                    talking to people but also listening to their stories, their unique lives,
+                    experiences, and families.{' '}
+                  </li>
+                  <li>We love walking and talking together about the world. </li>
+                  <li>
+                    We love sharing our French culture and cook French cuisine. We will love to
+                    share our French recipes with you if the ingredients are available!
+                  </li>
+                </ul>
+              </p>
+            </article>
             <article>
               <h4>Marie-Emma</h4>
               <img
@@ -116,74 +160,6 @@ class HomeIndex extends React.Component<WithI18nProps> {
                 <em>half moon</em> in Persian.
               </p>
             </article>
-            <article>
-              <h4>Us</h4>
-              <p>
-                We are two passionate people in love with travel and people. And you know what? We
-                are about to realize a unique life experience thanks to you.
-              </p>
-              <p>
-                Seriously. It's been a whole year that we are preparing ourselves to take 3 months
-                off away from our daily routine to meet new people, discover new cultures, new
-                activities, new languages, new landscapes. We want to learn about different routines
-                by experiencing them. At the dawn of our thirties, we want to challenge ourselves
-                for an adventure full of discoveries and new learnings.
-                <p>
-                  We have traveled a lot since our twenties: Thaïland, Vietnam, Canada, Mexico,
-                  Portugal, Spain, Italy, Netherlands, UK, US, Sweden and France of course.
-                  Although, we never really left our comfort zone as it always was classic holidays.
-                  Don't get us wrong. It was great, we always had great times and we have seen lots
-                  of beautiful landscapes, yet we never really had the time to connect fully with
-                  the people locally. That's why we want to experiment Couchsurfing. We want an
-                  authentic experience to discover South Korea and Japan. We want to discover the
-                  know-how and customs, jobs, history, daily food, and daily life.
-                </p>
-                <p>Before introducing each other, here are some fun facts about us:</p>
-                <ul>
-                  <li>
-                    We love talking and we do it all the time. We can't go through a day without
-                    telling each other every single detail of our lives. It's fantastic! We love
-                    talking to people but also listening to their stories, their unique lives,
-                    experiences, and families.{' '}
-                  </li>
-                  <li>We love walking and talking together about the world. </li>
-                  <li>
-                    We love sharing our French culture and cook French cuisine. We will love to
-                    share our French recipes with you if the ingredients are available!
-                  </li>
-                </ul>
-              </p>
-              <p>We love to host friends for dinner at our place and cook them dinner.</p>
-              <p>
-                Nous sommes deux jeunes passionnés qui apprenons à parler le coréen et le japonais
-                et nous voulons voyager pendant trois mois à travers la Corée et le Japon. Nous
-                aimons voyager à travers le monde en sac à dos.
-              </p>
-            </article>
-            <hr />
-            <article>
-              <h3 id="what-we-ask">{i18n.translate('whatWeNeed')}</h3>
-              <p>
-                We only ask for a bed for two people for one or more nights. Learn about you, you’re
-                culture and your cuisine. Learn some of your recipes. The things you cook when you
-                have friends over, the comfort food you eat in winter when it snows or rain outside.
-              </p>
-              <p>You need to have</p>
-              <ul>
-                <li>Cutting knives</li>
-                <li>Peeler</li>
-                <li>Pan</li>
-              </ul>
-              <p>Optional for some dishes:</p>
-              <ul>
-                <li>Oven</li>
-                <li>Papier sulfurisé</li>
-                <li>Plat à tarte</li>
-                <li>Plat en verre pour aller au four</li>
-              </ul>
-            </article>
-            <hr />
-            <Menu />
             <hr />
             <PhotoGallery />
             <hr />
@@ -214,9 +190,9 @@ class HomeIndex extends React.Component<WithI18nProps> {
               </p> */}
               <hr />
               <p className="contact-us">
-                <span className="button button-disabled">hi@nimarie.cooking</span>
-                <br />
-                <a href="mailto:hi@nimarie.cooking" className="button button-primary">
+                {/* <span className="button button-disabled">hi@nimarie.cooking</span>
+                <br /> */}
+                <a href="mailto:nim.izadi@gmail.com" className="button button-primary">
                   Contact Us
                 </a>
               </p>
@@ -230,9 +206,14 @@ class HomeIndex extends React.Component<WithI18nProps> {
               <p>
                 We do have a{' '}
                 <a href="https://www.couchsurfing.com/people/nimariemma">CouhcSurfing account</a>{' '}
-                but we think this is a bit more than just couchsurfing, so we thought having a website describing our project was relevant.
-                <br/>
-                We also plan to do woofing (<a href="https://www.workaway.info/workawayerprofile.html?w=Nimarie">see our profile</a>).
+                but we think this is a bit more than just couchsurfing, so we thought having a
+                website describing our project was relevant.
+                <br />
+                We also plan to do woofing (
+                <a href="https://www.workaway.info/workawayerprofile.html?w=Nimarie">
+                  see our profile
+                </a>
+                ).
               </p>
             </article>
           </div>
