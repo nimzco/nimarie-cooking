@@ -162,7 +162,7 @@ class HomeIndex extends React.Component<WithI18nProps> {
             </article>
             <hr />
             <article>
-              <h3 id="what-we-ask">Ce dont nous aurons besoin</h3>
+              <h3 id="what-we-ask">{i18n.translate('whatWeNeed')}</h3>
               <p>
                 We only ask for a bed for two people for one or more nights. Learn about you, you’re
                 culture and your cuisine. Learn some of your recipes. The things you cook when you
@@ -190,28 +190,28 @@ class HomeIndex extends React.Component<WithI18nProps> {
             <article>
               <h3 id="contact">Contact us</h3>
               <h4>When will you be in town?</h4>
-              <p>Here's a rough idea of our schedule:</p>
-              <h5>South Korea</h5>
+              <p>Here's a rough idea of our schedule and the cities/areas we want to visit:</p>
+              <h5>South Korea · Aug 15 - Oct 6</h5>
               <ul>
-                <li>Seoul and around: ~August 14-25</li>
-                <li>Bousan</li>
+                <li>Seoul and surroundings: ~August 14-25</li>
+                <li>Busan</li>
                 <li>Jeju</li>
               </ul>
-              <h5>Japan</h5>
+              <h5>Japan · Oct 7 - Nov 19</h5>
               <ul>
                 <li>Osaka</li>
                 <li>Kyoto</li>
                 <li>Tokyo</li>
               </ul>
               <p>
-                Si vous n’êtes pas sûre ou avez des questions n’hésitez pas à nous envoyer un e-mail
-                pour commencer la discussion.
+                If you have any questions, feel free to send us an email to start the conversation,
+                we'll be happy to talk with you!
               </p>
-              <p>
+              {/* <p>
                 Présentez vous, qu’est-ce que vous aimez dans la cuisine française ? Est-ce que vous
                 en avez déjà mangé ? Est-ce que vous connaissez la France ? Y avez-vous déjà été ?
                 Fun fact. How did you hear about us?
-              </p>
+              </p> */}
               <hr />
               <p className="contact-us">
                 <span className="button button-disabled">hi@nimarie.cooking</span>
@@ -228,11 +228,11 @@ class HomeIndex extends React.Component<WithI18nProps> {
               <h3 id="faq">FAQ - Frequently Asked Questions</h3>
               <h5>Why not just using couchsurfing.com?</h5>
               <p>
-                We think this is more than just couchsurfing.
-                <br />
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, explicabo
-                voluptates aut facilis laudantium a asperiores! Illum quidem quibusdam voluptate,
-                pariatur non nesciunt dolor facilis ducimus consequuntur possimus nam error.
+                We do have a{' '}
+                <a href="https://www.couchsurfing.com/people/nimariemma">CouhcSurfing account</a>{' '}
+                but we think this is a bit more than just couchsurfing, so we thought having a website describing our project was relevant.
+                <br/>
+                We also plan to do woofing (<a href="https://www.workaway.info/workawayerprofile.html?w=Nimarie">see our profile</a>).
               </p>
             </article>
           </div>
