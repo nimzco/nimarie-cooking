@@ -1,7 +1,8 @@
 $height: 25em;
 $spacing: 0.5em;
 
-.Row {
+.Row,
+.Row2 {
   height: $height;
   display: flex;
   flex-direction: row;
@@ -14,6 +15,15 @@ $spacing: 0.5em;
 
   > div:last-child {
     flex: 1;
+  }
+}
+.Row2 {
+  > div {
+    flex: 1;
+    margin-right: $spacing;
+  }
+  > div:last-child {
+    margin-right: 0;
   }
 }
 

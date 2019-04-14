@@ -151,9 +151,11 @@ class HomeIndex extends React.Component<WithI18nProps> {
               <p>
                 I love technology and entrepreneurship. This is why I like to give back to the open
                 source community on the Internet by creating or contributing to projects during my
-                free time. But more importantly, I love people. Listening to their stories and their
-                viewpoint; debating with them and having fun. Oh, and I forgot to mention, I started
-                doing improv as a leisure activity and I love it!
+                free time. I also love coffee, and I had the chance to learn how to work with
+                barista coffee machines. I learnt how to make latte art so I could definitely help
+                as a barista if needed! But more importantly, I love people. Listening to their
+                stories and their viewpoint; debating with them and having fun. Oh, and I forgot to
+                mention, I started doing improv as a leisure activity and I love it!
               </p>
               <p>
                 Fun fact: Nima means <em>sun</em> in Tibetan, and
