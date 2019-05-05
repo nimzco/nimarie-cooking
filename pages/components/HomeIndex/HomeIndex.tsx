@@ -169,7 +169,7 @@ class HomeIndex extends React.Component<WithI18nProps> {
               <h3 id="contact">Contact us</h3>
               <h4>When will you be in town?</h4>
               <p>Here's a rough idea of our schedule and the cities/areas we want to visit:</p>
-              <h5>South Korea · Aug 15 - Oct 6</h5>
+              <h5>South Korea · Aug 14 - Oct 6</h5>
               <ul>
                 <li>Seoul and surroundings: ~August 14-25</li>
                 <li>Busan</li>
