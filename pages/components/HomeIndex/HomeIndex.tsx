@@ -54,31 +54,31 @@ class HomeIndex extends React.Component<WithI18nProps> {
                 activities, new languages, new landscapes. We want to learn about different routines
                 by experiencing them. At the dawn of our thirties, we want to challenge ourselves
                 for an adventure full of discoveries and new learnings.
-                <p>
-                  We have traveled a lot since our twenties: Thaïland, Vietnam, Canada, Mexico,
-                  Portugal, Spain, Italy, Netherlands, UK, US, Sweden and France of course.
-                  Although, we never really left our comfort zone as it always was classic holidays.
-                  Don't get us wrong. It was great, we always had great times and we have seen lots
-                  of beautiful landscapes, yet we never really had the time to connect fully with
-                  the people locally. That's why we want to experiment Couchsurfing. We want an
-                  authentic experience to discover South Korea and Japan. We want to discover the
-                  know-how and customs, jobs, history, daily food, and daily life.
                 </p>
-                <p>Before introducing each other, here are some fun facts about us:</p>
-                <ul>
-                  <li>
-                    We love talking and we do it all the time. We can't go through a day without
-                    telling each other every single detail of our lives. It's fantastic! We love
-                    talking to people but also listening to their stories, their unique lives,
-                    experiences, and families.{' '}
-                  </li>
-                  <li>We love walking and talking together about the world. </li>
-                  <li>
-                    We love sharing our French culture and cook French cuisine. We will love to
-                    share our French recipes with you if the ingredients are available!
-                  </li>
-                </ul>
+              <p>
+                We have traveled a lot since our twenties: Thaïland, Vietnam, Canada, Mexico,
+                Portugal, Spain, Italy, Netherlands, UK, US, Sweden and France of course.
+                Although, we never really left our comfort zone as it always was classic holidays.
+                Don't get us wrong. It was great, we always had great times and we have seen lots
+                of beautiful landscapes, yet we never really had the time to connect fully with
+                the people locally. That's why we want to experiment Couchsurfing. We want an
+                authentic experience to discover South Korea and Japan. We want to discover the
+                know-how and customs, jobs, history, daily food, and daily life.
               </p>
+              <p>Before introducing each other, here are some fun facts about us:</p>
+              <ul>
+                <li>
+                  We love talking and we do it all the time. We can't go through a day without
+                  telling each other every single detail of our lives. It's fantastic! We love
+                  talking to people but also listening to their stories, their unique lives,
+                  experiences, and families.{' '}
+                </li>
+                <li>We love walking and talking together about the world. </li>
+                <li>
+                  We love sharing our French culture and cook French cuisine. We will love to
+                  share our French recipes with you if the ingredients are available!
+                </li>
+              </ul>
             </article>
             <article>
               <h4>Marie-Emma</h4>
