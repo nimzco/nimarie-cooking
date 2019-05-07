@@ -12,10 +12,25 @@ $spacing: 0.5em;
   > div:first-child {
     flex: 2;
     margin-right: $spacing;
+
+    @media (max-width: 550px) {
+      margin-right: 0;
+    }
   }
 
   > div:last-child {
     flex: 1;
+  }
+
+  @media (max-width: 550px) {
+    display: block;
+    margin-bottom: $spacing;
+    height: auto;
+    margin-right: 0;
+
+    > div {
+      min-height: $height;
+    }
   }
 }
 
@@ -43,6 +58,10 @@ $spacing: 0.5em;
   flex: 1;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 550px) {
+    display: block;
+  }
 }
 
 .Photo {
@@ -51,6 +70,12 @@ $spacing: 0.5em;
   max-width: 100%;
   display: block;
   height: 100%;
+
+  @media (max-width: 550px) {
+    display: block;
+    min-height: $height;
+    margin-bottom: $spacing;
+  }
 
   &:first-child {
     margin-bottom: $spacing;
