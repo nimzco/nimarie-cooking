@@ -207,7 +207,7 @@ class HomeIndex extends React.Component<WithI18nProps> {
               <h5>Why not just using couchsurfing.com?</h5>
               <p>
                 We do have a{' '}
-                <a href="https://www.couchsurfing.com/people/nimariemma">CouhcSurfing account</a>{' '}
+                <a href="https://www.couchsurfing.com/people/nimariemma">CouchSurfing account</a>{' '}
                 but we think this is a bit more than just couchsurfing, so we thought having a
                 website describing our project was relevant.
                 <br />
