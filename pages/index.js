@@ -9,7 +9,6 @@ import HomeIndex from './components/HomeIndex';
 
 import './styles/application.scss';
 
-
 class Home extends React.Component {
   i18nManager = new I18nManager({
     locale: this.props.router.query.locale || 'en',
